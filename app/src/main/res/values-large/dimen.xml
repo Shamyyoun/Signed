@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_large">36sp</dimen>
+    <dimen name="text_medium">30sp</dimen>
+    <dimen name="text_small">24sp</dimen>
+
+    <dimen name="form_com_text_size">40sp</dimen>
+    <dimen name="form_com_padding_lr">22.5dp</dimen>
+    <dimen name="form_com_padding_tb">6dp</dimen>
+    <dimen name="form_com_height">85dp</dimen>
+
+    <dimen name="header_text_margin">15dp</dimen>
+    <dimen name="header_text_size">36sp</dimen>
+
+    <dimen name="horizontal_seperator_margin">8dp</dimen>
+
+    <dimen name="top_panel_text_size">83sp</dimen>
+    <dimen name="top_panel_text_padding_lr">45dp</dimen>
+    <dimen name="top_panel_text_padding_tb">90dp</dimen>
+    <dimen name="big_radial_button_dimen">375dp</dimen>
+    <dimen name="big_radial_button_text_size">75sp</dimen>
+    <dimen name="big_radial_button_text_margin">60dp</dimen>
+
+    <dimen name="log_text_padding">15dp</dimen>
+    <dimen name="log_text_size">24sp</dimen>
+
+    <dimen name="error_image_dimen">120dp</dimen>
+    <dimen name="error_text_margin">23dp</dimen>
+
+    <dimen name="splash_logo_width">300dp</dimen>
+
+    <dimen name="login_logo_width">180dp</dimen>
+    <dimen name="login_logo_margin">105dp</dimen>
+    <dimen name="login_padding">23dp</dimen>
+
+    <dimen name="log_header_padding">8dp</dimen>
+    <dimen name="log_content_padding">15dp</dimen>
+
+    <dimen name="dp15">23dp</dimen>
+    <dimen name="dp30">45dp</dimen>
+</resources>

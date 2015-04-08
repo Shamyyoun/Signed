@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/login_padding"
+    android:paddingRight="@dimen/login_padding"
+    android:overScrollMode="never"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="@dimen/login_logo_margin"
+        android:layout_marginBottom="@dimen/login_logo_margin"
+        android:src="@drawable/signed_logo"
+        android:layout_width="@dimen/login_logo_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" />
+
+        <LinearLayout
+            android:id="@+id/layout_loginForm"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="@string/username"
+                style="@style/text_filed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_com_height"
+                android:id="@+id/text_username" />
+
+            <EditText
+                android:layout_marginTop="@dimen/dp15"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                style="@style/text_filed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_com_height"
+                android:id="@+id/text_password" />
+
+            <Button
+                android:text="@string/sign_in"
+                android:layout_marginTop="@dimen/dp30"
+                style="@style/form_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_com_height"
+                android:id="@+id/button_login"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+

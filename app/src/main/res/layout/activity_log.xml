@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/actionbar"
+        android:background="@drawable/actionbar_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+
+        <ImageView
+            android:src="@drawable/signed_logo"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/actionabr_logo_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@color/light_gray"
+        android:layout_below="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/view_progress"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_progress"></include>
+
+        <include
+            android:id="@+id/view_error"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_error"></include>
+
+
+        <FrameLayout
+            android:id="@+id/view_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/log_header_padding"
+                    android:paddingRight="@dimen/log_header_padding"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/text_day"
+                                style="@style/header_text"
+                                android:layout_weight="1"
+                                android:text="@string/day"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                style="@style/horizontal_seperator"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/text_loginTime"
+                                style="@style/header_text"
+                                android:layout_weight="1"
+                                android:text="@string/login_time"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                style="@style/horizontal_seperator"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text_logoutTime"
+                            style="@style/header_text"
+                            android:layout_weight="2"
+                            android:text="@string/logout_time"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <View
+                        android:background="@color/blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+
+
+                <android.support.v4.widget.SwipeRefreshLayout xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/swipeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="MergeRootFrame">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_log"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="blue">#24799c</color>
+    <color name="dark_blue">#038e93</color>
+    <color name="light_gray">#e1e1e1</color>
+    <color name="dark_gray">#555555</color>
+
+    <color name="error_view_main">#ff515151</color>
+    <color name="error_view_sec">#ff707070</color>
+
+    <color name="weekend">#EFEFEF</color>
+    <color name="holiday">#98F0A6</color>
+    <color name="complete">#FFFFFF</color>
+    <color name="non_complete">#FFFEA3</color>
+    <color name="missed">#FFC3C3</color>
+
+</resources>

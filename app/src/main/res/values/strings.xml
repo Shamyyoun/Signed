@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Signed</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="please_wait">Please wait</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unexpected_error_try_again">Unexpected error, try again</string>
+    <string name="error">Error</string>
+    <string name="close">Close</string>
+    <string name="invalid_inputs">Invalid inputs</string>
+    <string name="invalid_username_or_password">Invalid username or password</string>
+    <string name="username_cant_be_empty">Username can\'t be empty</string>
+    <string name="password_cant_be_empty">Password can\'t be empty</string>
+    <string name="sign_out">Sign out</string>
+    <string name="error_occurred_contact_admin">Error occurred.\nContact admin.</string>
+    <string name="signin_successful">Sign in successful</string>
+    <string name="signout_successful">Sign out successful</string>
+    <string name="day">Day</string>
+    <string name="login_time">Login time</string>
+    <string name="logout_time">Logout time</string>
+    <string name="tap_to_refresh">Tap to refresh</string>
+    <string name="error_loading_data">Error loading data</string>
+    <string name="error_starting_service">Error in starting service.</string>
+    <string name="error_stopping_service">Error in stopping service.</string>
+    <string name="you_signed_in_at">You signed in at</string>
+    <string name="you_signed_out_at">You signed out at</string>
+    <string name="bluetooth_not_enabled">Bluetooth not enabled</string>
+    <string name="not_support_bluetooth">Device does not have Bluetooth Low Energy</string>
+    <string name="you_should_enable_bluetooth">You should enable bluetooth before 30 minutes</string>
+    <string name="you_are_out_of_range">You are out of range, try later.</string>
+    <string name="monitoring_is_running">Monitoring is running</string>
+    <string name="monitoring_service_has_stopped">Monitoring service has stopped</string>
+    <string name="logs">Logs</string>
+    <string name="no_unsynced_logs">No unSynced logs</string>
+    <string name="synced_sucessfully">synced sucessfully</string>
+    <string name="remember_to_sync_your_logs">Remember to sync your logs</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/actionbar"
+        android:background="@drawable/actionbar_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+
+        <ImageView
+            android:src="@drawable/signed_logo"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/actionabr_logo_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/top_panel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 Logs"
+                android:id="@+id/text_logs" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/sync_button"
+                    android:layout_width="@dimen/big_radial_button_dimen"
+                    android:layout_height="@dimen/big_radial_button_dimen"
+                    android:scaleType="fitXY"
+                    android:id="@+id/button_sync" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>
+

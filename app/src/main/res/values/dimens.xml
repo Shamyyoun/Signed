@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="actionabr_logo_width">100dp</dimen>
+    <dimen name="actionabr_icon_dimen">45dp</dimen>
+    <dimen name="actionabr_icon_margin">10dp</dimen>
+</resources>
