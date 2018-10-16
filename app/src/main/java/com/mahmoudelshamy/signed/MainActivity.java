@@ -41,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
     private Handler handler;
     private Runnable runnable;
 
-    // receiver objects
+    // message receiver objects
     private MessageReceiver mReceiver;
     private boolean mReceiverIsRegistered;
 
@@ -154,7 +154,7 @@ public class MainActivity extends ActionBarActivity {
             return;
         } else {
             // enabled >> start service
-            Intent serviceIntent = new Intent(MainActivity.this, BeaconsService.class);
+            Intent serviceIntent = new Intent(getApplicationContext(), BeaconsService.class);
             startService(serviceIntent);
 
             // start progress

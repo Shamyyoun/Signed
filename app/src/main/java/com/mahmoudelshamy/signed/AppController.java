@@ -25,7 +25,7 @@ import utils.NotificationUtil;
  * Created by Shamyyoun on 3/15/2015.
  */
 public class AppController extends Application {
-    public static final String END_POINT = "http://mahmoudelshamy.eb2a.com/beacons/services";
+    public static final String END_POINT = "http://signed.mahmoudelshamy.com/services";
     private User activeUser;
 
     public AppController() {
